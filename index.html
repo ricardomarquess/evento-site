@@ -9,41 +9,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head> 
 <body>
-    <div class="main-title">
-        <h1>PROMOÇÃO!!!!</h1>
-        <h2>50% de desconto!</h2>
-    </div>
-    <div class="conteiner">
-        <div class="preco">
-            <div class="sem-promo">
-                <h2>de</h2>
-                <h1>R$225,99</h1>
+    <div class="main">
+        <div class="main-title">
+            <h1>PROMOÇÃO!!!!</h1>
+            <h2>50% de desconto!</h2>
+        </div>
+        <div class="conteiner">
+            <div class="preco">
+                <div class="sem-promo">
+                    <h2>de</h2>
+                    <h1>R$225,99</h1>
+                </div>
+                <div class="com-promo">
+                    <h2>por apenas</h2>
+                    <h1>R$112,99</h1>
+                    <p>
+                        Você garante seu futuro no mundo da tecnologia!<br>
+                        Preencha os dados abaixo e receba todas as informações para<br>
+                        <strong>SER O NOSSO MAIS NOVO ALUNO</strong>
+                    </p>
+                </div>
             </div>
-            <div class="com-promo">
-                <h2>por apenas</h2>
-                <h1>R$112,99</h1>
+            <div class="inscricao">
+                <form action="" method="post">
+                    <div class="input-group" id="input-group1">
+                        <label for="id_email">Seu E-mail</label>
+                        <input type="email" name="email" id="id_email" placeholder="Seu E-mail aqui..." required>
+                    </div>
+                    <div class="input-group" id="input-group2">
+                        <label for="id_wpp">Seu numero de Whatsapp</label>
+                        <input type="tel" name="wpp" id="id_wpp" required placeholder="(xx) xxxxx-xxxx">
+                    </div>
+                    <div class="input-enviar">
+                        <input type="submit" value="INSCREVER-SE">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="info-evento">
+        <header>
+            <h1>
+                O vamos aprender?
+            </h1>
+        </header>
+        <div class="info-group">
+            <div class="info">
+                <h1>Aprofundamento</h1>
                 <p>
-                    Você garante seu futuro no mundo da tecnologia!<br>
-                    Preencha os dados abaixo e receba todas as informações para<br>
-                    <strong>SER O NOSSO MAIS NOVO ALUNO</strong>
+                    Antes de iniciar na area é muito importante saber por onde começar. E nada melhor do que um aprofunda no contexto historico sobre o mundo da tecnologia, até porque se você quer ser um profissional de sucesso, você deve saber onde tudo começou!
+                </p>
+            </div>
+            <div class="info">
+                <h1>Fundamentos</h1>
+                <p>
+                    Vamos aprender os fundamentos de 4 linguagens server-side, e como usa-las de um jeito real, no dia a dia. Após aprender o basico vamos partir para como lidar com sistema avançados, praticando e aprendendo juntos!
+                </p>
+            </div>
+            <div class="info">
+                <h1>Pratica</h1>
+                <p>
+                    Aqui é aonde você vê progresso acontecendo! Nada melhor do que ver tudo que estudou dando certo e podendo colocar a mão na massa, não? Aqui você pode praticar e pedir ajuda para seus colegas ou tutores!
+                </p>
+            </div>
+            <div class="info">
+                <h1>Projeto</h1>
+                <p>
+                    Como finalização, vamos criar um projeto do zero para masterizar seus conhecimentos, e mais vamos criar um repositorio para guardar seu projeto e você poder usa-lo dentro do seu portfolio!
                 </p>
             </div>
         </div>
-        <div class="inscrição">
-            <form action="" method="post">
-                <div class="input-group">
-                    <label for="id_email">Seu E-mail</label>
-                    <input type="number" name="email" id="id_email" placeholder="Seu E-mail aqui..." required>
-                </div>
-                <div class="input-group">
-                    <label for="id_wpp">Seu numero de Whatsapp</label>
-                    <input type="number" name="wpp" id="id_wpp" required>
-                </div>
-                <div class="input-enviar">
-                    <input type="submit" value="INSCREVER-SE">
-                </div>
-            </form>
+        <div class="end-info">
+            <h1>Vem aprender com a gente!</h1>
         </div>
     </div>
+    <footer>
+        <p>
+            Site criado por <strong><a href="https://github.com/ricardomarquess" target="_blank" type="external">Ricardo</a></strong>
+        </p>
+    </footer>
 </body>
 </html>

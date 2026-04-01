@@ -26,7 +26,16 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(100deg, #0A090C);
+}
+
+.main {
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -61,15 +70,20 @@ body {
 .conteiner {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
 }
 
 .preco {
+    width: 90vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
-    margin-bottom: 8em;
+    margin-bottom: 2em;
 }
 
 .sem-promo {
@@ -78,8 +92,205 @@ body {
     gap: 2px;
 }
 
-.sem-promo > h1 {
-    font-family: var(--th);
-    text-decoration-style: ;
+.sem-promo > h2 {
+    font-weight: 100;
 }
 
+.sem-promo > h1 {
+    font-family: var(--th);
+}
+
+.com-promo {
+    display: flex;
+    flex-direction: column;
+}
+
+.com-promo> h2 {
+    font-family: var(--th);
+    font-weight: 100;
+    font-size: 2em;
+    color: #53F3AB;
+    text-shadow:0px 0px 5px #53F3AB;
+    margin-bottom: -20px;
+}
+
+.com-promo > h1 {
+    font-family: var(--th);
+    font-size: 3em;
+    color: #53F3AB;
+    text-shadow:0px 0px 5px #53F3AB;
+}
+
+.com-promo > p {
+    font-family: var(--th);
+}
+
+.com-promo strong {
+    font-family: var(--th);
+    color: #53F3AB;
+}
+
+.inscricao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow:0px 0px 20px rgba(0, 0, 0, 0.3);   
+    outline:2px solid #53F3AB;
+    width: 90vw;
+    height: 300px;
+    padding: 20px 0px;
+    transition: box-shadow 0.5s ease;
+}
+
+form {
+    .input-group {
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    .input-group > label {
+        text-align: left;
+        font-family: var(--th);
+        font-size: 0.75em;
+        margin-bottom: 2px;
+    }
+
+    #input-group1 {
+            margin-bottom: 12px;
+    }
+
+    .input-group > input {
+        text-align: left;
+        padding: 10px 20px;
+        width: 100%;
+        height: auto;
+        outline: none;
+        border-style: none;
+        border-radius: 20px;
+    }
+
+    input {
+        font-family: var(--th);
+        font-size: 10px;
+    }
+
+    .input-enviar {
+        margin-top: 10px;
+    }
+
+    .input-enviar > input {
+        width: 100%;
+        height: auto;
+        padding: 10px 20px;
+        border-style: none;
+        border-radius: 12px;
+        background-color: #53F3AB;
+        box-shadow:0px 0px 5px #53F3AB;
+        font-family: var(--th);
+        font-weight: bolder;
+        color: #0A090C;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .input-enviar > input:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* Informações */
+
+.info-evento {
+    width: 90vw;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+header {
+    margin: 2rem 0rem;
+}
+
+header > h1 {
+    text-align: left;
+    font-family: var(--th);
+    font-weight: 100;
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    outline: 1px solid #F0EDEE;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+}
+
+.info > h1 {
+    font-family: var(--th);
+    text-align: left;
+    color: #53F3AB;
+}
+
+.info > p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: ;
+    text-align: justify;
+    text-indent: 2em;
+    font-family: var(--th);
+    font-size: 0.8rem;
+}
+
+.end-info {
+    padding: 20px;
+}
+
+.end-info > h1 {
+    font-family: var(--th);
+    color: #53F3AB;
+    text-shadow: 0px 0px 5px #53F3AB;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    font-size: 0.75rem;
+}
+
+footer > p {
+    padding: 10px 0px;
+    color: #F0EDEE;
+    font-family: var(--th);
+    font-weight: 5000;
+}
+
+footer strong {
+    color: #53F3AB;
+    font-family: var(--th);
+    font-weight: bolder;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: var(--th);
+    color: #53F3AB;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
