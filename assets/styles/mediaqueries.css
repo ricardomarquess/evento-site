@@ -1,1 +1,98 @@
 @charset "UTF-8";
+
+/* 768px -> Tablets/Small Laptops */
+@media screen and (min-width: 768px) {
+    body {
+        background: linear-gradient(to top,#0A090C, #0C1C13);
+    }
+
+    .inscricao {
+        width: 50vw;
+    }
+}
+/* 1024px -> Laptops/Desktops */
+@media screen and (min-width: 768px){
+    
+    .info-group {
+        justify-content: space-around;
+    }
+
+    .info {
+        width: 40vw;
+    }
+}
+/* 1024px -> Large Desktops */
+@media screen and (min-width: 1024px) {
+    .inscricao {
+        box-shadow: 0px 0px 5px #53F3AB;
+    }
+}
+
+/* 1200px ->  */
+
+@media screen and (min-width: 1200px){
+    body {
+        height: 100%;
+    }
+
+    .main {
+        height: 50vh;
+    }
+
+    .main-title {
+        height: 10vh;
+    }
+
+    .conteiner {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 1.5em;
+        gap: 6em;
+        width: 90vw;
+        height: auto;
+    }
+
+    .inscricao {
+        padding: 5px 0px;
+        width: 40vw;
+        height: 250px;
+    }
+
+    .info-evento {
+        width: 90vw;
+        height: 90vh;
+        margin-top: 0;
+    }
+
+
+    .info {
+        width: 20vw;
+    }
+
+    .info > h1 {
+        font-size: 100%;
+    }
+
+    .info-evento > header {
+        margin: 0 0;
+    }
+}
+
+/* 1440px */
+@media screen and (min-width: 1440px) {
+    .main {
+        height: 100%;
+    }
+
+    .info-evento {
+        height: 100%;   
+    }
+
+    .info-group {
+        height: auto;
+    }
+
+    .end-info {
+        padding: 20px 20px;
+    }
+}
