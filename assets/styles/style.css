@@ -224,16 +224,17 @@ header > h1 {
 
 .info-group {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    flex: auto;
     gap: 2em;
 }
 
 .info {
     display: flex;
     flex-direction: column;
+    flex: 0 1 auto;
     gap: 1rem;
     outline: 1px solid #F0EDEE;
-    height: 250px;
     border-radius: 20px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.9);
     padding: 2rem;
@@ -243,17 +244,17 @@ header > h1 {
     font-family: var(--th);
     text-align: left;
     color: #53F3AB;
+    font-size: 1.5em;
 }
 
 .info > p {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    font-family: ;
     text-align: justify;
     text-indent: 2em;
     font-family: var(--th);
     font-size: 0.8rem;
+    flex: auto;
 }
 
 .end-info {
